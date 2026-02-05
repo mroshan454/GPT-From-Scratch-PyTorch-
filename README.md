@@ -26,3 +26,57 @@ All of these are implemented in the notebook without using high-level Transforme
 - Combining (MSA + FFN + Residual Connection + LayerNorm + Vocab Projection) to form GPT
 - Training Loop
 - Autoregressive Generation with strict `<END>` stopping
+
+## Architecture 
+
+The model follows standard GPT Architecture: 
+- Token Embeddings + Positional Embeddings
+- Transformer Blocks - Multihead Self Attention + Feed Forward Neural Network + Residual Connections + Layer Norm 
+- Final Layer Normalization
+- Vocabulary Projection Head
+
+This implementation Exactly Replicates the model architecture or the original GPT while keeping its component transparent and readable.
+
+## Dataset 
+
+To keep the training fast and interpretable , the model is trained on a Tiny text corpus containing some hand written sentences with repeated structure.
+
+This allows to demonstrate the language model clearly while using the same pipeline which is can be scaled to larger real-world dataset.
+
+An `<END>` token is appended to each sentence and used during generation to break generation of the text.
+
+## Training Objective 
+
+The model is trained using CrossEntropy loss , the standard for next token prediction.
+
+Due to small dataset , the rapid loss convergence serves as an indicator of the model correctness rather than language quality.
+
+## Sample Generation 
+
+After Training , the model generate text autoregressively by predicting one token at a time using Masked Self Attention.
+
+**Prompt :**
+```
+"I  love"
+```
+**Model Output**
+```
+"I love machine learning . "
+```
+Text generation stops automatically when the <END> token is produced.
+
+## Tech Stack 
+- Python
+- PyTorch
+- Jupyter Notebook (Google Colab)
+
+## Notes :
+- This project is educational and not meant for production deployement.
+- The dataset is intentionally small to highlight model learning and easier debugging.
+- The main focus is to replicate the model architecture , it's interpretability and correctness.
+
+This project was built to deeply understand how th GPT-style model works internally from raw text to token-by-token generation, without treating Transformer as a blackbox.
+
+
+
+
