@@ -1,7 +1,5 @@
 # GPT From Scratch (PyTorch)
 
-A minimal , interpretable implementation of GPT from scratch using PyTorch.
-
 ## Overview 
 
 This repository contains code-implementation of a GPT-style Language Model from the ground-breaking research paper "Attention is All you Need":
