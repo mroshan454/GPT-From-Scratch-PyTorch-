@@ -61,7 +61,7 @@ After Training , the model generate text autoregressively by predicting one toke
 ```
 **Model Output**
 ```
-"I love machine learning . "
+"I love deep learning . "
 ```
 Text generation stops automatically when the <END> token is produced.
 
