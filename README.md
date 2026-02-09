@@ -1,18 +1,16 @@
 # GPT From Scratch (PyTorch)
 
-A minimal , interpretable implementation of GPT from scratch using PyTorch.
-
 ## Overview 
 
-This repository contains code-implementation of a GPT-style Language Model from the ground-breaking research paper "Attention is All you Need":
+This repository contains code-implementation of a **GPT-style Language Model** from the ground-breaking research paper **"Attention is All you Need":**
 
 The goal is to demonstrate deep understanding of: 
-- Tokenization and Vocabulary Creation
-- Token Embeddings and Position Embeddings
-- Causal (Masked) Self-Attention
-- Transformer Blocks 
-- Training the Model to Predict the Next token
-- Autoregressive Text Generation
+- **Tokenization and Vocabulary Creation**
+- **Token Embeddings and Position Embeddings**
+- **Causal (Masked) Self-Attention**
+- **Transformer Blocks** 
+- **Training the Model to Predict the Next token**
+- **Autoregressive Text Generation**
 
 All of these are implemented in the notebook without using high-level Transformer libraries.
 
@@ -30,10 +28,10 @@ All of these are implemented in the notebook without using high-level Transforme
 ## Architecture 
 
 The model follows standard GPT Architecture: 
-- Token Embeddings + Positional Embeddings
-- Transformer Blocks - Multihead Self Attention + Feed Forward Neural Network + Residual Connections + Layer Norm 
-- Final Layer Normalization
-- Vocabulary Projection Head
+- **Token Embeddings + Positional Embeddings**
+- **Transformer Blocks - Multihead Self Attention + Feed Forward Neural Network + Residual Connections + Layer Norm**
+- **Final Layer Normalization**
+- **Vocabulary Projection Head**
 
 This implementation Exactly Replicates the model architecture or the original GPT while keeping its component transparent and readable.
 
@@ -61,7 +59,7 @@ After Training , the model generate text autoregressively by predicting one toke
 ```
 **Model Output**
 ```
-"I love machine learning . "
+"I love deep learning . "
 ```
 Text generation stops automatically when the <END> token is produced.
 
@@ -75,7 +73,7 @@ Text generation stops automatically when the <END> token is produced.
 - The dataset is intentionally small to highlight model learning and easier debugging.
 - The main focus is to replicate the model architecture , it's interpretability and correctness.
 
-This project was built to deeply understand how th GPT-style model works internally from raw text to token-by-token generation, without treating Transformer as a blackbox.
+This project was built to deeply understand how the GPT-style model works internally from raw text to token-by-token generation, without treating Transformer as a blackbox.
 
 
 
