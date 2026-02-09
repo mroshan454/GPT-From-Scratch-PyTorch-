@@ -33,7 +33,7 @@ The model follows standard GPT Architecture:
 - **Final Layer Normalization**
 - **Final Vocabulary Projection Head**
 
-<!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" height="400" width="380"/> </p>
+<!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" width="380"/> </p>
 
 This implementation Exactly Replicates the model architecture or the original GPT while keeping its component transparent and readable.
 
