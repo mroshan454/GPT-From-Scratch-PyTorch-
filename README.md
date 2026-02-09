@@ -34,11 +34,6 @@ The model follows standard GPT Architecture:
 - **Final Vocabulary Projection Head**
 
 <!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" width="200"/> </p>
-
-<p align="center">
-  <img src="GPT_Diagram.png" alt="GPT Architecture" width="420">
-</p>
-
 <sub>Diagram adapted from <i>Attention Is All You Need</i>, aligned with this implementation.</sub>
 
 
