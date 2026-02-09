@@ -42,7 +42,7 @@ At each timestep , the model can only attend to the previously generated token a
 
  <!-- 📌 Diagram 2: Training vs Inference (Autoregressive Decoding) -->
 <p align="center">
-  <img src="Training_vs_Inference.png" width="900"/>
+  <img src="Training_vs._Inference_Final.drawio.png" width="900"/>
 </p>
 
 <sub>
