@@ -36,6 +36,22 @@ The model follows standard GPT Architecture:
 <!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" width="200"/> </p>
 <sub>Diagram adapted from <i>Attention Is All You Need</i>, aligned with this implementation.</sub>
 
+## How Masked Self-Attention Works
+GPT generates text **one token at a time**.
+At each timestep , the model can only attend to the previously generated token and not the next/future tokens this is done by applying **Causal Mask** to the future tokens.
+
+ <!-- 📌 Diagram 2: Training vs Inference (Autoregressive Decoding) -->
+<p align="center">
+  <img src="Training_vs_Inference.png" width="900"/>
+</p>
+
+<sub>
+Training uses teacher forcing with parallel token processing,  
+while inference generates tokens sequentially using the model’s own predictions.
+</sub>
+
+
+
 
 ## Dataset 
 
