@@ -35,7 +35,12 @@ The model follows standard GPT Architecture:
 
 <!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" width="200"/> </p>
 
-This implementation Exactly Replicates the model architecture or the original GPT while keeping its component transparent and readable.
+<p align="center">
+  <img src="GPT_Diagram.png" alt="GPT Architecture" width="420">
+</p>
+
+<sub>Diagram adapted from <i>Attention Is All You Need</i>, aligned with this implementation.</sub>
+
 
 ## Dataset 
 
