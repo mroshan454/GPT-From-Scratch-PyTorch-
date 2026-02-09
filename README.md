@@ -14,6 +14,8 @@ The goal is to demonstrate deep understanding of:
 
 All of these are implemented in the notebook without using high-level Transformer libraries.
 
+This project demonstrates how modern language models work internally, a foundation required for roles involving LLM fine-tuning, RAG systems, and multimodal AI.
+
 ## What this project Demonstrates 
 - Word-level Tokenization
 - Encoding text into a continous token stream
