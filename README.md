@@ -31,7 +31,9 @@ The model follows standard GPT Architecture:
 - **Token Embeddings + Positional Embeddings**
 - **Transformer Blocks - Multihead Self Attention + Feed Forward Neural Network + Residual Connections + Layer Norm**
 - **Final Layer Normalization**
-- **Vocabulary Projection Head**
+- **Final Vocabulary Projection Head**
+
+<!-- 📌 Diagram 1: Full GPT Architecture --> <p align="center"> <img src="GPT_Diagram.png" width="420"/> </p>
 
 This implementation Exactly Replicates the model architecture or the original GPT while keeping its component transparent and readable.
 
